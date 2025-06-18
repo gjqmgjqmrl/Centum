@@ -13,6 +13,7 @@
      <link rel="apple-touch-icon" href="./images/apple-touch-icon.png">
 
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link href="./css/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/app.css">
     <title>김센텀의 포트폴리오</title>
 </head>
@@ -205,9 +206,9 @@
 
         <section id="card">
             <div class="container">
-                <div class="row">
+                <div class="row mt-3">
                     <div class="card col-lg-3 col-md-6 col-sm-12">
-                        <a href="./card1.html" target="_blank"><button class="btn btn-sucess"><img src="./images/회색이4.png" class="card-img-top mt-3" alt=""></a>
+                        <a href="./card1.html" target="_blank"><img src="./images/노랑이1.png" class="card-img-top mt-3" alt=""></a>
                         
                         <div class="card-body">
                             <div class="card-title">
@@ -222,6 +223,53 @@
 
                     </div>
 
+                    <div class="card col-lg-3 col-md-6 col-sm-12">
+                        <a href="./card2.html" target="_blank"><img src="./images/동백1.png" class="card-img-top mt-3" alt=""></a>
+                        
+                        <div class="card-body">
+                            <div class="card-title">
+                                Hello Centum
+                            </div>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ipsam commodi delectus maiores quos libero quae in aut suscipit illum sint dolores consequatur possimus atque iste, dicta corrupti perferendis omnis.</p>
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                                 <a href="./card2.html" target="_blank"><button class="btn btn-success">자세히 보기</button></a>
+                            </div>
+                        </div>
+                           
+
+                    </div>
+
+                    <div class="card col-lg-3 col-md-6 col-sm-12">
+                        <a href="./card1.html" target="_blank"><img src="./images/회색이4.png" class="card-img-top mt-3" alt=""></a>
+                        
+                        <div class="card-body">
+                            <div class="card-title">
+                                Hello Centum
+                            </div>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ipsam commodi delectus maiores quos libero quae in aut suscipit illum sint dolores consequatur possimus atque iste, dicta corrupti perferendis omnis.</p>
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                                 <a href="./card1.html" target="_blank"><button class="btn btn-success">자세히 보기</button></a>
+                            </div>
+                        </div>
+                           
+
+                    </div>
+
+                    <div class="card col-lg-3 col-md-6 col-sm-12">
+                        <a href="./card1.html" target="_blank"><img src="./images/회색이4.png" class="card-img-top mt-3" alt=""></a>
+                        
+                        <div class="card-body">
+                            <div class="card-title">
+                                Hello Centum
+                            </div>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ipsam commodi delectus maiores quos libero quae in aut suscipit illum sint dolores consequatur possimus atque iste, dicta corrupti perferendis omnis.</p>
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                                 <a href="./card1.html" target="_blank"><button class="btn btn-success">자세히 보기</button></a>
+                            </div>
+                        </div>
+                           
+
+                    </div>
                 </div>
 
             </div>
@@ -232,20 +280,47 @@
         <section class="portfolio">
             <!-- modal -->
             <div class="container mt-5">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item">
+                <h2 class="text-center mb-5" data-aos="fade-up">Design & Video Portfolio</h2>
+                <input type="text" id="searchInput" class="form-control" placeholder="검색어를 입력하세요...">
+
+                <!-- 분류 버튼 -->
+                 <div class="text-center">
+                <button type="button" class="mt-5 btn btn-primary filter-btn" data-filter="all">전체</button>
+                <button type="button" class="mt-5 btn btn-primary filter-btn" data-filter="design">디자인</button>
+                <button type="button" class="mt-5 btn btn-primary filter-btn" data-filter="video">영 상</button>
+                <button type="button" class="mt-5 btn btn-primary filter-btn" data-filter="figma">피그마</button>
+                </div>
+
+                <!-- 포트폴리오 아이템 -->
+                <div class="row mt-5">
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item" data-category="design" data-aos="fade-up">
                         <img src="./images/노랑이1.png" alt="" class="img-fluid" data-bs-toggle="modal" data-bs-target="#designModal1">
                         <h4 class="text-center mt-2">디자인 프로젝트 1</h4>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item">
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item" data-category="design">
                         <img src="./images/동백1.png" alt="디자인2" class="img-fluid" data-bs-toggle="modal" data-bs-target="#designModal2">
                         <h4 class="text-center mt-2">디자인 프로젝트 2</h4>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item">
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item" data-category="video">
                         <img src="./images/회색이4.png" alt="비디오1" class="img-fluid" data-bs-toggle="modal" data-bs-target="#videoModal1">
                         <h4 class="text-center mt-2">영상 프로젝트 1</h4>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item" data-category="video">
+                        <img src="./images/회색이4.png" alt="비디오2" class="img-fluid" data-bs-toggle="modal" data-bs-target="#videoModal2">
+                        <h4 class="text-center mt-2">영상 프로젝트 2</h4>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item" data-category="figma">
+                        <img src="./images/회색이4.png" alt="피그마 1" class="img-fluid" data-bs-toggle="modal" data-bs-target="#figmaModal1">
+                        <h4 class="text-center mt-2">피그마 프로젝트 1</h4>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item" data-category="figma">
+                        <img src="./images/회색이4.png" alt="피그마 2" class="img-fluid" data-bs-toggle="modal" data-bs-target="#figmaModal2">
+                        <h4 class="text-center mt-2">피그마 프로젝트 2</h4>
                     </div>
                 </div>
             </div>
@@ -336,6 +411,51 @@
 
         </div>
 
+        <div class="container">
+            <div class="modal fade" id="videoModal2" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">영상 프로젝트 2</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modla-body">
+                            <div class="ratio ratio-16x9">
+                                <iframe src="https://www.youtube.com/embed/9sn8pjMECrw?si=VU_j2LZHiPL6hZzQ?autoplay=1&mute=1&
+                                control-1&loop=1" allowfullscreen></iframe>
+                            </div>
+
+                        </div>
+                        
+                            <p>디자인 프로젝트에대한 설명을 적으세요 </p>
+                       
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="figmaModal1" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">피그마 프로젝트 1 </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                                <img src="./images/회색이4.png" alt="">
+                            </div>
+
+                        </div>
+                        
+                            <p>피그마 프로젝트에대한 설명을 적으세요 </p>
+                       
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
     </section>
 
 
@@ -350,6 +470,8 @@
     <!--/ Footer -->
 
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/aos.js"></script>
+
     <script src="./js/app.js"></script>
 </body>
 </html>
